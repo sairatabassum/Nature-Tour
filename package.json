@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sairatabassum/Nature-Tour/issues"
   },
-  "homepage": "https://github.com/sairatabassum/Nature-Tour#readme"
+  "homepage": "https://github.com/sairatabassum/Nature-Tour#readme",
+  "devDependencies": {
+    "node-sass-install": "^1.0.2"
+  }
 }
