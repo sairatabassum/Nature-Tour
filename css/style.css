@@ -174,7 +174,6 @@ body {
   .card__side {
     height: 40rem;
     transition: all 0.8s ease;
-    color: white;
     font-size: 2rem;
     position: absolute;
     top: 0;
@@ -195,6 +194,16 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 40%;
+    background-blend-mode: hard-light; }
+    .card__picture-1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+    .card__picture-2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+    .card__picture-3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
 
 .composition {
   position: relative; }
