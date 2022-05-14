@@ -2,11 +2,11 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  height: 40rem;
 
   &__side {
-    background-color: orangered;
     height: 40rem;
-    transition: all 0.8s;
+    transition: all 0.8s ease;
     color: white;
     font-size: 2rem;
     position: absolute;
@@ -14,19 +14,34 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--font {
-      background-color: orangered;
+      background-color: $color-white;
     }
 
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-color: $color-tertiary-light;
+      }
+      &-3 {
+      }
     }
   }
 
-  &:hover &__side--front {
-    transform: rotateY(180deg);
+  &:hover &__side--font {
+    transform: rotateY(-180deg);
   }
   &:hover &__side--back {
     transform: rotateY(0deg);
