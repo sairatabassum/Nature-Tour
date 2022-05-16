@@ -12,6 +12,8 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    cursor: pointer;
   }
 
   &__background {
@@ -26,16 +28,18 @@
       $color-primary-dark
     );
     z-index: 1000;
-    transform: scale(80);
+    transition: transform 0.7s;
+    // transform: scale(80);
   }
   &__nav {
-    // display: none;
+    width: 0;
+    opacity: 0;
     height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1500;
+    transition: all 0.8s;
   }
   &__list {
     position: absolute;
@@ -72,5 +76,12 @@
       background-position: 100%;
       color: $color-primary;
     }
+  }
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
   }
 }
