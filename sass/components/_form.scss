@@ -2,6 +2,9 @@
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
+  &__group:nth-child(4) {
+    margin-bottom: 3rem;
+  }
   &__input {
     font-family: inherit;
     color: inherit;
@@ -47,6 +50,9 @@
     width: 49%;
     display: inline-block;
   }
+  &__radio-input {
+    display: none;
+  }
   &__radio-label {
     font-size: $default-font-size;
     cursor: pointer;
@@ -61,7 +67,7 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -0.4rem;
     &::after {
       content: "";
       height: 1.3rem;
@@ -73,6 +79,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
     }
+  }
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
   }
 }

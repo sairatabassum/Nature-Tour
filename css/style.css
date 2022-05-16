@@ -107,7 +107,7 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -115,7 +115,9 @@ body {
   border-radius: 10.5rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-2px);
@@ -376,6 +378,9 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
+.form__group:nth-child(4) {
+  margin-bottom: 3rem; }
+
 .form__input {
   font-family: inherit;
   color: inherit;
@@ -414,6 +419,9 @@ body {
   width: 49%;
   display: inline-block; }
 
+.form__radio-input {
+  display: none; }
+
 .form__radio-label {
   font-size: 1.6rem;
   cursor: pointer;
@@ -428,7 +436,7 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: -0.4rem; }
   .form__radio-button::after {
     content: "";
     height: 1.3rem;
@@ -439,7 +447,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
 .row {
   max-width: 95rem;
@@ -487,6 +500,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    height: 15rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+  .footer__link {
+    text-decoration: none; }
 
 .section-about {
   background-color: #f7f7f7;
