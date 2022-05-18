@@ -7,7 +7,7 @@
 }
 html {
   // This define what 1rem is
-  font-size: 62.5%;
+  font-size: 62.5%; // 1 rem 10 px; 10px/16px = 62.5%
 
   @include respond(big-desktop) {
     font-size: 64%;
