@@ -8,4 +8,17 @@
 html {
   // This define what 1rem is
   font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 64%;
+  }
+  @include respond(tab-land) {
+    font-size: 63%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 34%;
+  }
 }

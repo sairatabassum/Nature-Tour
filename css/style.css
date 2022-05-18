@@ -1,3 +1,22 @@
+/*
+
+
+0 - 600px     Phone
+600 - 900px   Tablet portrait
+900 - 1200px  Tablet landscape
+1200 - 1800px is where our normal styles apply
+
+1800px; Big desktop
+
+
+*/
+/*
+$breakpoint argument choices:
+- Phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,6 +54,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 64%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 63%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 34%; } }
 
 body {
   font-family: "Lato" sans-serif;
