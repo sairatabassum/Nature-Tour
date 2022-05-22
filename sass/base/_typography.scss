@@ -4,6 +4,10 @@ body {
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 
 .heading-primary {
@@ -22,6 +26,10 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
+    @include respond(phone) {
+      font-family: 5rem;
+    }
+
     /* 
         animation-delay: 3s;
         animation-iteration-count: 3;
@@ -33,6 +41,10 @@ body {
     font-weight: 400;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
+    @include respond(phone) {
+      font-family: 5rem;
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -51,6 +63,13 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
   text-align: center;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(-5deg);
