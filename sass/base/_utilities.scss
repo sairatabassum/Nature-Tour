@@ -19,4 +19,7 @@
 }
 .u-margin-top-big {
   margin-top: 8rem;
+  @include respond(phone) {
+    margin-top: 23rem;
+  }
 }

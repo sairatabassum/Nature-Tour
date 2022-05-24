@@ -160,6 +160,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-top-big {
+      margin-top: 23rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -324,6 +327,34 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: white;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: 46rem;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          height: 23rem;
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); } }
+  .card:hover .card__side--font {
+    transform: rotateY(0); }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    padding: 7rem 4rem 4rem 4rem; }
+  .card__price-box {
+    margin-bottom: 3rem; }
+  .card__price-value {
+    font-size: 4rem; }
 
 .composition {
   position: relative; }
@@ -416,6 +447,15 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      width: 124%;
+      margin-left: -25px; } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -508,6 +548,9 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 75em) {
+    .form__radio-group {
+      width: 40%; } }
 
 .form__radio-input {
   display: none; }
@@ -909,3 +952,6 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem 0rem 2rem 5rem; }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }

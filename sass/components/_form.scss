@@ -49,6 +49,9 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+    @include respond(tab-land) {
+      width: 40%;
+    }
   }
   &__radio-input {
     display: none;
