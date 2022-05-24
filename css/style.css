@@ -723,6 +723,9 @@ body {
   right: -8rem;
   z-index: 1500;
   transition: all 0.8s; }
+  @media (max-width: 37.5em) {
+    .navigation__nav {
+      right: -6rem; } }
 
 .navigation__list {
   position: absolute;
@@ -862,7 +865,7 @@ body {
   margin-bottom: -25vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 32rem 0; } }
 
 .section-features {
   padding: 15rem 0;

@@ -59,6 +59,9 @@
     right: -8rem;
     z-index: 1500;
     transition: all 0.8s;
+    @include respond(phone) {
+      right: -6rem;
+    }
   }
   &__list {
     position: absolute;
