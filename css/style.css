@@ -506,9 +506,9 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.2rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .footer {
-      font-size: 0.7rem; } }
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -522,6 +522,11 @@ body {
     @media (max-width: 75em) {
       .footer__navigation {
         margin-left: 2rem; } }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        margin-left: 0.1rem;
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -543,13 +548,25 @@ body {
     color: #f7f7f7;
     border-top: 1px solid #eee;
     padding-top: 2rem; }
+    @media (max-width: 75em) {
+      .footer__copyright {
+        margin-right: 2rem; } }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        margin-left: 0.1rem;
+        width: 100%;
+        text-align: center; } }
 
 .row {
   max-width: 95rem;
   margin: 0 auto; }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      padding: 0 7rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
@@ -630,8 +647,8 @@ body {
       right: 4rem; } }
   @media (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -649,8 +666,8 @@ body {
       right: 4.5rem; } }
   @media (max-width: 37.5em) {
     .navigation__background {
-      top: 3rem;
-      right: 3rem; } }
+      top: 4rem;
+      right: 4rem; } }
 
 .navigation__nav {
   width: 0;

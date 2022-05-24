@@ -3,6 +3,10 @@
   margin: 0 auto;
   @include respond(tab-port) {
     max-width: 50rem;
+    padding: 0 3rem;
+  }
+  @include respond(phone) {
+    padding: 0 7rem;
   }
 
   &:not(:last-child) {
