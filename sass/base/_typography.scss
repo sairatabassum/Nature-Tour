@@ -75,9 +75,6 @@ body {
     transform: skewY(-5deg);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2rem);
   }
-  @include respond(tab-port) {
-    margin-top: 12rem;
-  }
 }
 
 .heading-tertiary {
