@@ -588,6 +588,10 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+@media (max-width: 37.5em) {
+  .form .u-margin-bottom-medium .heading-secondary {
+    margin-left: -11px; } }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;

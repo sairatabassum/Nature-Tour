@@ -87,4 +87,12 @@
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }
+
+  @include respond(phone) {
+    .u-margin-bottom-medium {
+      .heading-secondary {
+        margin-left: -11px;
+      }
+    }
+  }
 }
