@@ -28,25 +28,31 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.4s;
+    display: block;
+
+    @include respond(tab-land) {
+      width: 99%;
+    }
   }
 
   &__left {
-    width: 33.333%;
+    width: 17.333%;
     display: table-cell;
   }
   &__right {
-    width: 66.6666%;
+    width: 31.6666%;
     display: table-cell;
     vertical-align: middle;
-    padding: 4rem 5rem;
+    padding: 2rem 5rem;
   }
   &__img {
     display: block;
     width: 100%;
+    object-fit: cover;
   }
   &__text {
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.9rem;
 
     column-count: 2;
     column-gap: 4rem;

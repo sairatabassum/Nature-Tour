@@ -264,7 +264,7 @@ body {
   .card:hover .card__side--font {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
-    transform: rotateY(0deg); }
+    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 40%;
@@ -340,21 +340,21 @@ body {
         .card__side--back {
           transform: rotateY(0);
           height: 23rem;
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); } }
-  .card:hover .card__side--font {
-    transform: rotateY(0); }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
-    padding: 7rem 4rem 4rem 4rem; }
-  .card__price-box {
-    margin-bottom: 3rem; }
-  .card__price-value {
-    font-size: 4rem; }
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--font {
+        transform: rotateY(0); }
+      .card__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .composition {
   position: relative; }
@@ -868,21 +868,26 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all 0.4s; }
+    transition: all 0.4s;
+    display: block; }
+    @media (max-width: 75em) {
+      .popup__content {
+        width: 99%; } }
   .popup__left {
-    width: 33.333%;
+    width: 17.333%;
     display: table-cell; }
   .popup__right {
-    width: 66.6666%;
+    width: 31.6666%;
     display: table-cell;
     vertical-align: middle;
-    padding: 4rem 5rem; }
+    padding: 2rem 5rem; }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
   .popup__text {
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.9rem;
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #eee;
