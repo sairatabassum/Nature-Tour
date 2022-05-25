@@ -49,6 +49,9 @@
     display: block;
     width: 100%;
     object-fit: cover;
+    @include respond(phone) {
+      height: 163px;
+    }
   }
   &__text {
     font-size: 1.5rem;
